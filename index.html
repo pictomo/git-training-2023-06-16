@@ -31,8 +31,7 @@
                 case 'multiply':
                     return decimalPointCalculate(f1.multiply(f2), decimalPoint)
                 case 'mod':
-                    // return decimalPointCalculate(f1.divide(f2), decimalPoint)
-                    return decimalPointCalculate(f1.multiply(f2), decimalPoint)
+                    return decimalPointCalculate(f1.divide(f2), decimalPoint)
                 case 'square':
                     return decimalPointCalculate(f1.multiply(f1), decimalPoint)
                 default :
@@ -42,7 +41,6 @@
         function decimalPointCalculate(value, decimalPoint){
             if(decimalPoint === 'ceil'){
                 return value.ceil()
-                //return value.floor()
             }
             if(decimalPoint === 'floor'){
                 return value.floor()
